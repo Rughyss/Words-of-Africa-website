@@ -161,6 +161,11 @@ nav a {
   line-height: 1.6;
   text-align: center;
 }
+.footer-pattern {
+  height: 150px;
+  background-size: contain;
+  background-position: bottom;
+}
 
 .page-content a {
   font-weight: bold;
