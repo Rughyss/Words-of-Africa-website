@@ -220,4 +220,23 @@ nav a:hover {
   color: white;
   transition: background-color 0.3s ease;
 }
+.coming-soon {
+  background-color: #fff8f1;
+  padding: 30px;
+  border: 2px dashed #8a4a2e;
+  text-align: center;
+  border-radius: 10px;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+}
+.coming-soon h2 {
+  font-size: 1.8rem;
+  color: #8a4a2e;
+  margin-bottom: 10px;
+}
+.coming-soon p {
+  font-size: 1.1rem;
+  color: #333;
+}
 
