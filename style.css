@@ -73,3 +73,65 @@ nav a {
   height: 60px;
   margin-top: 60px;
 }
+.section-header {
+  background-color: #8a4a2e;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+.page-content {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #f9f5f0;
+}
+
+.page-content h1 {
+  font-size: 3rem;
+  color: #6b3e2e;
+  margin-bottom: 10px;
+}
+
+.page-content p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.notify-btn {
+  background-color: white;
+  border: 2px solid #8a4a2e;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons img {
+  width: 24px;
+  margin: 0 10px;
+}
+
+.contact-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-grid div {
+  border: 1px solid #8a4a2e;
+  padding: 12px 20px;
+  background-color: white;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  width: fit-content;
+}
