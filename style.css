@@ -68,7 +68,7 @@ nav a {
 }
 
 .footer-pattern {
-  background: url('pattern.jpg') no-repeat center;
+  background: url('footer-pattern.jpg') no-repeat center;
   background-size: cover;
   height: 60px;
   margin-top: 60px;
