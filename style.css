@@ -76,10 +76,14 @@ nav a {
 }
 
 .footer-pattern {
-  background: url('footer-pattern.jpg') no-repeat center;
+  background-image: url("pattern.png"); /* update path if needed */
   background-size: cover;
-  height: 60px;
-  margin-top: 60px;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 120px; /* increase for mobile visibility */
+  width: 100%;
+}
+
 }
 .section-header {
   background-color: #8a4a2e;
