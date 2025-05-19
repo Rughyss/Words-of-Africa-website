@@ -239,4 +239,18 @@ nav a:hover {
   font-size: 1.1rem;
   color: #333;
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.coming-soon {
+  animation: fadeIn 1s ease-in-out;
+}
 
