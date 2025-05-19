@@ -84,6 +84,9 @@ nav a {
 }
 
 .page-content {
+   width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 60px 20px;
   text-align: center;
   background-color: #f9f5f0;
