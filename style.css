@@ -98,6 +98,7 @@ nav a {
 .page-content p {
   font-size: 1.1rem;
   color: #555;
+  width: 90%;
   max-width: 600px;
   margin: 0 auto 30px;
 }
