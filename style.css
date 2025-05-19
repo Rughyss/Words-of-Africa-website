@@ -192,4 +192,17 @@ nav a {
     font-size: 1rem;
   }
 }
+/* Hover effect for nav links */
+nav a:hover {
+  text-decoration: underline;
+  color: #ffd6b0;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.notify-btn:hover {
+  background-color: #6e331c;
+  color: white;
+  transition: background-color 0.3s ease;
+}
 
