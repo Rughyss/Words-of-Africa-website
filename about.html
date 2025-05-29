@@ -2,41 +2,108 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Articles - Words of Africa</title>
+  <title>Articles – Words of Africa</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+    header {
+      text-align: center;
+      padding: 40px 20px 10px;
+    }
+    h1 {
+      margin-bottom: 10px;
+    }
+    .filter-buttons {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .filter-buttons button {
+      margin: 5px;
+      padding: 10px 15px;
+      background-color: #222;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .filter-buttons button:hover {
+      background-color: #444;
+    }
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px 60px;
+    }
+    .article-card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .article-card h2 {
+      margin-top: 0;
+    }
+    .article-card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #222;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    .article-card a:hover {
+      background-color: #444;
+    }
+  </style>
 </head>
 <body>
-  <nav>
-    <div>
-      <img src="logo.png" alt="Words of Africa logo" height="40">
-    </div>
-    <div>
-      <a href="index.html">HOME</a>
-      <a href="about.html">ARTICLES</a>
-      <a href="contact.html">GET IN TOUCH</a>
-    </div>
-  </nav>
-<section class="page-content">
-  <h1>ARTICLES</h1>
-  <div class="coming-soon">
-  <h2>📝 Articles Coming Soon!</h2>
-  <p>
-    We’re currently brewing something powerful — authentic stories, unheard voices, and raw truths from across Africa. Stay tuned!
-  </p>
-</div>
 
-  <p>Launching soon!<br><br>Our team is currently working on top notch, fine content and pieces for you.</p>
+  <header>
+    <h1>Words of Africa – Our Voices</h1>
+    <p>Explore poetry, essays, reflections and stories by Black creatives. Use the buttons below to filter by category.</p>
+  </header>
 
- <a href="https://forms.gle/MnY4194h7TSUiWyH8" target="_blank">
-  <button class="notify-btn">Notify Me</button>
-</a>
-
-
-  <div class="social-icons">
-    <img src="instagram-icon.png" alt="Instagram">
-    <img src="twitter-icon.png" alt="Twitter">
+  <div class="filter-buttons">
+    <button onclick="filterArticles('all')">All</button>
+    <button onclick="filterArticles('poetry')">Poetry</button>
+    <button onclick="filterArticles('essay')">Essay</button>
+    <button onclick="filterArticles('culture')">Culture</button>
   </div>
-</section>
-<div class="footer-pattern"></div>
+
+  <div class="article-grid">
+    <div class="article-card" data-category="poetry">
+      <h2>Black is a Bruise</h2>
+      <p><strong>By Abubakar</strong></p>
+      <p>A raw and thoughtful poem exploring a Black boy’s relationship with his identity and race through the lens of pain and healing.</p>
+      <a href="black-poem.html">Read More</a>
+    </div>
+
+    <!-- More article cards can be added here, with appropriate data-category attributes -->
+
+  </div>
+
+  <script>
+    function filterArticles(category) {
+      const cards = document.querySelectorAll('.article-card');
+      cards.forEach(card => {
+        if (category === 'all' || card.dataset.category === category) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
 </body>
 </html>
