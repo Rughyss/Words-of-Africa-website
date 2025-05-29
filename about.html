@@ -13,6 +13,22 @@
       background-color: #fff7f1;
       color: #2c2c2c;
     }
+    nav {
+      background-color: #111;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 1em;
+    }
+    nav a:hover {
+      color: #c49a6c;
+    }
     header {
       text-align: center;
       padding: 40px 20px 10px;
@@ -72,9 +88,26 @@
     .article-card a:hover {
       background-color: #c49a6c;
     }
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
+
+  <nav>
+    <div class="logo"><a href="index.html">Words of Africa</a></div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="articles.html">Articles</a>
+      <a href="contact.html">Get in Touch</a>
+    </div>
+  </nav>
 
   <header>
     <h1>Words of Africa – Our Voices</h1>
@@ -98,6 +131,10 @@
     <!-- More article cards can be added here -->
   </div>
 
+  <footer>
+    <p>&copy; 2025 Words of Africa. All rights reserved.</p>
+  </footer>
+
   <script>
     function filterArticles(category) {
       const cards = document.querySelectorAll('.article-card');
@@ -113,3 +150,5 @@
 
 </body>
 </html>
+
+     
